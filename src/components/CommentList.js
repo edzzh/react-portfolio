@@ -16,7 +16,7 @@ const CommentList = ({ comments }) => {
     return (
       <div className="comment" key={comment.key}>
         <div className="content">
-          <a className="author">{comment.username}</a>
+          <span className="author">{comment.username}</span>
           <div className="metadata">
             <span className="date">{comment.timestamp}</span>
           </div>
