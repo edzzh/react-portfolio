@@ -13,7 +13,7 @@ class GalleryItem extends React.Component {
 
   fetchPhoto = async () => {
     const photoId = this.props.match.params.id;
-    const response = await axios.get(
+    const photo = await axios.get(
       `https://api.unsplash.com/photos/${photoId}`,
       {
         headers: {
@@ -23,7 +23,7 @@ class GalleryItem extends React.Component {
     );
 
     this.setState({
-      photoData: response.data
+      photoData: photo.data
     });
   };
 
