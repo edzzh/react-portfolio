@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. `npm install`
 2. `npm run`
 
-If there is a webpack issue with running `npm run` - Add `webpack: "^4.42.0"` to package.json dependencies object.
+If there is a webpack issue with running `npm run`, add `webpack: "^4.42.0"` to package.json dependencies object.
 
 Then delete `node_modules` directory and rerun `npm install`.
 
