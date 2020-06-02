@@ -1,13 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Setup
+1. `npm install`
+2. `npm run`
+
+If there is a webpack issue with running `npm run` - Add `webpack: "^4.42.0"` to package.json dependencies object.
+
+Then delete `node_modules` directory and rerun `npm install`.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
-
-If there is a webpack issue with running `npm start` - Add `webpack: "^4.42.0"` to package.json dependencies object.
-Then delete `node_modules` directory and rerun `npm install`.
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
