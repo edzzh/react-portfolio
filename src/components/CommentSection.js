@@ -37,19 +37,21 @@ class CommentSection extends React.Component {
     const photo_id = this.props.photo.id;
     const timestamp = new Date().toLocaleString();
 
-    this.databaseRef.add({
-      username,
-      comment,
-      photo_id,
-      timestamp
-    }).then((docRef) => {
-      this.setState({
-        username: '',
-        comment: ''
+    if (username !== '' && comment !== '') {
+      this.databaseRef.add({
+        username,
+        comment,
+        photo_id,
+        timestamp
+      }).then(() => {
+        this.setState({
+          username: '',
+          comment: ''
+        });
+      }).catch((error) => {
+        console.error("Error adding document: ", error);
       });
-    }).catch((error) => {
-      console.error("Error adding document: ", error);
-    });
+    }
   };
 
   fetchComments = async () => {
