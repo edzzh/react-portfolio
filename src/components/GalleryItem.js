@@ -35,7 +35,7 @@ class GalleryItem extends React.Component {
     return (
       <div className="ui raised very padded text container segment" style={{marginBottom: "20px"}}>
         <h2 className="ui header centered">
-          {(this.state.photoData.description !== null) ? this.state.photoData.description : "No Title"}
+          {(this.state.photoData.description !== null) ? this.state.photoData.description.toUpperCase() : "NO TITLE"}
         </h2>
         <img className="ui image centered large"
              src={this.state.photoData.urls.full}
